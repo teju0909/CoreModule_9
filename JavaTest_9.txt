@@ -1,0 +1,294 @@
+Q1.What is Spring Framework?
+Ans:
+	The Spring Framework is an open-source application framework and inversion of control container for the Java platform. It provides a comprehensive programming 	and configuration model for modern Java-based enterprise applications.
+
+	Spring Framework is used to develop enterprise applications that are:
+
+	Highly scalable:
+	---------------
+ 		 Spring Framework is designed to be scalable to handle large volumes of traffic.
+
+	Reusable:
+	---------
+		 Spring Framework components are designed to be reusable, so you can easily create new applications by assembling existing components.
+
+	Extensible:
+	-----------
+		Spring Framework is highly extensible, so you can customize it to meet the specific needs of your application.
+	Secure: 
+	-------
+		Spring Framework includes a number of features to help you secure your applications, such as authentication, authorization, and encryption.
+
+Features of the Spring Framework:
+=================================
+	Dependency injection: 
+		Dependency injection is a design pattern that allows you to decouple the dependencies of your application. This makes your application more flexible 		and easier to test.
+	
+	Inversion of control (IoC): 
+		IoC is a design pattern that allows you to control the creation and management of objects in your application. This makes your application more 		maintainable and easier to change.
+
+	Aspect-oriented programming (AOP): 
+		AOP is a programming technique that allows you to modularize cross-cutting concerns in your application. This makes your application more maintainable 		and easier to test.
+
+	Data access: 
+		Spring Framework provides a number of features to help you access data in your application. This includes support for JDBC, ORM, and NoSQL databases.
+	
+	Web development: 
+		Spring Framework provides a number of features to help you develop web applications. This includes support for Spring MVC, Spring Security, and Spring 		Boot.
+
+======================================================================================================================================================================
+
+
+Q2.What are the features of Spring Framework?
+Ans:
+
+	The Spring Framework is a powerful and versatile framework that provides a wide range of features for developing Java applications. Here are some of the most 	important features of the Spring Framework:
+
+	Dependency injection: 
+		Dependency injection is a design pattern that allows you to decouple the dependencies of your application. This makes your application more flexible 		and easier to test.
+
+	Inversion of control (IoC): 
+		IoC is a design pattern that allows you to control the creation and management of objects in your application. This makes your application more 		maintainable and easier to change.
+
+	Aspect-oriented programming (AOP): 
+		AOP is a programming technique that allows you to modularize cross-cutting concerns in your application. This makes your application more maintainable 		and easier to test.
+
+	Data access: 
+		Spring Framework provides a number of features to help you access data in your application. This includes support for JDBC, ORM, and NoSQL databases.
+
+	Web development: 
+		Spring Framework provides a number of features to help you develop web applications. This includes support for Spring MVC, Spring Security, and Spring 		Boot.
+
+	Testing: 
+		Spring Framework provides a number of features to help you test your applications. This includes support for mock objects, unit testing, and 		integration testing.
+
+	Internationalization and localization: 
+		Spring Framework provides support for internationalization and localization, allowing your applications to be easily adapted to different languages, 		regions, and cultures.
+
+	Caching: 
+		Spring Framework provides support for caching, which can help improve the performance of your applications.
+
+	Transaction management: 
+		Spring Framework provides support for transaction management, which can help ensure the integrity of your data.
+
+======================================================================================================================================================================
+
+Q3.What is a Spring configuration file?
+Ans:
+	A Spring configuration file is a file that contains the configuration information for a Spring application. This information includes the definition of beans, 	the definition of dependencies, and the definition of the application context.
+
+	Spring configuration files can be written in XML or in Java. XML configuration files are the most common type of Spring configuration file. Java configuration 	files are becoming more popular, as they are easier to read and write.
+
+Example of a Spring configuration file in XML:
+**********************************************
+
+	<?xml version="1.0" encoding="UTF-8"?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+       		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       		xsi:schemaLocation="http://www.springframework.org/schema/beans
+  	 http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   	<bean id="myBean" class="com.example.MyBean">
+      		<property name="name" value="John Doe"/>
+   		</bean>
+
+	</beans>
+
+	This configuration file defines a bean called myBean. The bean is of type com.example.MyBean and has a property called name. The value of the name property is 	John Doe.
+
+	Spring configuration files can be used to configure a wide variety of aspects of a Spring application. This includes the definition of beans, the definition of 	dependencies, the definition of the application context, and the definition of the application's environment.
+
+======================================================================================================================================================================
+
+Q4.What do you mean by IoC Container?
+Ans:
+	Inversion of control (IoC) is a design pattern that allows you to control the creation and management of objects in your application. This makes your 	application more maintainable and easier to change.
+
+	An IoC container is a framework that implements IoC. It is responsible for instantiating, configuring, and assembling objects in your application. The IoC 	container also manages the lifecycle of objects in your application.
+
+	The Spring Framework provides an IoC container called the BeanFactory. The BeanFactory is a powerful tool that can help you develop well-organized and 	maintainable applications.
+
+Benefits of using an IoC container:
+***********************************
+
+	It makes development faster and easier. The IoC container can automatically instantiate and configure objects for you, which can save you a lot of time and 	effort.
+
+	It makes applications more maintainable. The IoC container can help you to decouple the dependencies of your application, which makes it easier to change and 	update applications without having to make major changes to the code.
+
+	It makes applications more flexible. The IoC container can be used to configure objects in a variety of ways, which gives you more flexibility in how you 	develop your applications.
+
+	If you are looking for a way to improve the maintainability and flexibility of your applications, then you should consider using an IoC container.
+
+List most popular IoC containers:
+*********************************
+	=>Spring Framework BeanFactory
+	=>Google Guice
+	=>PicoContainer
+	=>Weld
+	=>Dagger
+
+======================================================================================================================================================================
+
+Q5.What do you understand by Dependency Injection?
+Ans:
+	Dependency injection (DI) is a programming technique that allows us to pass the dependencies of a class into that class, rather than having the class create 	its own dependencies. This decouples the class from its dependencies, making it easier to test and maintain.
+
+
+		public class Car {
+		    private Engine engine;
+
+		    public Car(Engine engine) {
+	            this.engine = engine;
+		    }
+
+		    public void start() {
+	            engine.start();
+		    }
+		}
+
+
+	In this example, the Car class depends on the Engine class. However, the Car class does not create its own instance of the Engine class. Instead, the Car class 	takes an Engine object as a constructor argument. This allows us to inject a different Engine object into the Car class at runtime.
+
+Benefits to using dependency injection:
+
+	Loose coupling: Dependency injection decouples the class from its dependencies, making it easier to test and maintain.
+	***************
+	Testability: Dependency injection makes it easier to test classes in isolation, because we can inject mock dependencies into the class.
+	************
+	Extensibility: Dependency injection makes it easy to extend and modify classes, because we can inject different dependencies into the class at runtime.
+	**************
+
+======================================================================================================================================================================
+
+Q6.Explain the difference between constructor and setter injection?
+Ans:
+
+Constructor injection:
+**********************
+	Constructor injection is the most common type of dependency injection. In constructor injection, the dependencies of a class are passed into the class's 		constructor. This ensures that the class cannot be instantiated without its dependencies.
+
+		1.It doesn’t allow to create circular dependency
+		2.Constructor-based DI fixes the order in which the dependencies need to be injected.
+		3.Combining with final fields, constructor injection gives extra safety in multithreaded environment
+		4.Spring code generation library doesn’t support constructor injection so it will not be able to create proxy. It will force you to use no-argument 			constructor.  
+		5.It should be used for mandatory dependencies
+
+
+Setter injection:
+*****************
+	Setter injection is less common than constructor injection. In setter injection, the dependencies of a class are passed into the class's setters. This allows 		the class to be instantiated without its dependencies, and the dependencies can be set later.
+
+		1.It doesn’t check the circular dependency
+		2.Setter-based DI helps us to inject the dependency only when it is required, as opposed to requiring it at construction time.
+		3.No extra benefit in setter injection
+		4.Spring framework level code uses setter injection
+		5.It should be used for optional dependencies.
+
+======================================================================================================================================================================
+
+Q7.What are Spring Beans?
+Ans:
+	In Spring, a bean is an object that is instantiated, assembled, and otherwise managed by a Spring IoC container. Beans are the basic building blocks of Spring 	applications.
+
+	Spring beans can be any Java object, but they are typically POJOs (Plain Old Java Objects). POJOs are classes that do not have any special dependencies on the 	Spring Framework.
+
+	Spring beans are created, configured, and managed by the Spring IoC container. The IoC container is responsible for instantiating beans, wiring them together, 	and providing them with their dependencies.
+
+	Spring beans can be configured in a variety of ways. They can be configured using XML, Java annotations, or a combination of both.
+
+Benefits of Spring Beans:
+
+	Loose coupling:
+		 Beans are loosely coupled, which means that they are not tightly coupled to their dependencies. This makes beans easier to test and maintain.
+
+	Reusability: 
+		Beans can be reused in different parts of an application. This makes it easier to build modular applications.
+
+	Extensibility: 
+		Beans can be extended and modified easily. This makes it easier to adapt applications to changing requirements.
+Spring beans are a powerful feature of the Spring Framework. They can help you to build better, more maintainable, and more extensible applications.
+
+======================================================================================================================================================================
+
+Q8.What are the bean scopes available in Spring?
+
+Ans:
+
+There are five types of spring bean scopes:
+*******************************************
+	1.singleton - only one instance of the spring bean will be created for the spring container. This is the default spring bean scope. While using this scope, 			      make sure bean doesn’t have shared instance variables otherwise it might lead to data inconsistency issues.
+
+	2.prototype – A new instance will be created every time the bean is requested from the spring container.
+
+	3.request – This is same as prototype scope, however it’s meant to be used for web applications. A new instance of the bean will be created for each HTTP 		             request.
+
+	4.session – A new bean will be created for each HTTP session by the container.
+
+	5.global-session – This is used to create global session beans for Portlet applications.
+
+
+======================================================================================================================================================================
+
+Q9.What is Autowiring and name the different modes of it?
+Ans:
+
+	Autowiring is a feature of the Spring Framework that allows you to inject dependencies into beans without explicitly specifying them. This can make your code 	more concise and easier to maintain.
+
+	There are three modes of autowiring in Spring:
+
+	1.ByName: Autowires by matching the name of the dependency to the name of the bean that is providing the dependency.
+
+	2.ByType: Autowires by matching the type of the dependency to the type of the bean that is providing the dependency.
+
+	3.Constructor: Autowires by matching the constructor arguments of the bean to the beans that are providing the dependencies.
+
+	The default mode of autowiring is byType. This means that Spring will try to autowire a dependency by matching the type of the dependency to the type of the 	bean that is providing the dependency. If there is more than one bean of the same type, Spring will throw an exception.
+
+	You can also specify the byName or constructor mode of autowiring explicitly. To do this, you can use the @Autowired annotation on the field or constructor 	that you want to autowire.
+
+For example, the following code shows how to autowire a dependency by name:
+
+	@Autowired
+	private MyDependency myDependency;
+	
+
+The following code shows how to autowire a dependency by constructor:
+
+
+	public MyBean(@Autowired MyDependency myDependency) {
+	  this.myDependency = myDependency;
+	}
+
+
+======================================================================================================================================================================
+
+Q10.Explain Bean life cycle in Spring Bean Factory Container.
+Ans:
+	The bean life cycle in Spring Bean Factory Container is a set of stages that a bean goes through from the time it is created to the time it is destroyed.
+
+	The bean life cycle in Spring Bean Factory Container can be divided into the following stages:
+
+	Instantiation: The first stage is the instantiation stage. In this stage, the bean is created by the Spring IoC container.
+
+	Dependency injection: The second stage is the dependency injection stage. In this stage, the Spring IoC container injects the dependencies of the bean.
+
+	Initialization: The third stage is the initialization stage. In this stage, the bean is initialized. This can be done by calling a custom init() method or by 			implementing the InitializingBean interface.
+
+	Post-initialization: The fourth stage is the post-initialization stage. In this stage, the bean is post-initialized. This can be done by calling a custom 			     post-init() method or by implementing the BeanPostProcessor interface.
+
+	Usage: The fifth stage is the usage stage. In this stage, the bean is used by the application.
+
+	Destruction: The sixth and final stage is the destruction stage. In this stage, the bean is destroyed by the Spring IoC container.
+
+	The bean life cycle in Spring Bean Factory Container can be customized by using the following techniques:
+
+	Custom init() and post-init() methods: You can customize the initialization and post-initialization stages of the bean life cycle by providing custom init() 					       and post-init() methods.
+
+	The InitializingBean and DisposableBean interfaces: You can customize the initialization and destruction stages of the bean life cycle by implementing the 							    InitializingBean and DisposableBean interfaces.
+
+	BeanPostProcessors: You can customize the initialization and post-initialization stages of the bean life cycle by registering BeanPostProcessors with the 			    Spring IoC container.
+
+======================================================================================================================================================================
+
+
+
